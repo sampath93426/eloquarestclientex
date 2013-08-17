@@ -18,7 +18,7 @@ public class ApiDetails {
 
     public static void main(String args[]) {
         /* replace CompanyName, UserName and password with your eloqua instance login credential */
-        Client restClient = new Client("CompanyName" + "\\" + "UserName", "password", "https://login.eloqua.com/id");
+        Client restClient = new Client("Site" + "\\" + "UserName", "password", "https://login.eloqua.com/id");
         Response response = restClient.get("");
        // System.out.println("Response body:" + response.body);
         //System.out.println("Response status:" + response.statusCode);
